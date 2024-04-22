@@ -99,7 +99,7 @@ def check_field_min_length(field_name, min_length, quote_field_name: bool = Fals
         field_name = f'"{field_name}"'
     return {
         f"invalid_count({field_name}) = 0": {
-            "name": f"Check that field {field_name} has a min length of {min}",
+            "name": f"Check that field {field_name} has a min length of {min_length}",
             "valid min length": min_length,
         }
     }
@@ -121,7 +121,7 @@ def check_field_minimum(field_name, minimum, quote_field_name: bool = False):
         field_name = f'"{field_name}"'
     return {
         f"invalid_count({field_name}) = 0": {
-            "name": f"Check that field {field_name} has a minimum of {min}",
+            "name": f"Check that field {field_name} has a minimum of {minimum}",
             "valid min": minimum,
         }
     }
